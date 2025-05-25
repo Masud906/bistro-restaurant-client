@@ -42,9 +42,9 @@ const Card = () => {
                 <h2 className="text-4xl">Items: {cart.length}</h2>
                 <h2 className="text-4xl">Total Price: {totalPrice.toFixed(2)}</h2>
                 {cart.length ? <Link to="/dashbord/payment">
-                <button className="btn btn-warning">Pay</button>
+                    <button className="btn btn-warning">Pay</button>
                 </Link> :
-                <button disabled className="btn btn-warning">Pay</button>
+                    <button disabled className="btn btn-warning">Pay</button>
                 }
             </div>
             <div className="overflow-x-auto ">
@@ -86,7 +86,7 @@ const Card = () => {
                                     <button
                                         onClick={() => handleDelet(item._id)}
                                         className="btn btn-outline btn-warning btn-lg"><FaTrashAlt className="text-black"></FaTrashAlt>
-                                        </button>
+                                    </button>
                                 </th>
                             </tr>)
                         }

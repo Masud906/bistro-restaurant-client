@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 const ManageItems = () => {
-    const [menu, , refetch] = useMenu();
+    const [menu, refetch] = useMenu();
     const axiosSecure = useAxiosSecure();
 
     const handleDeletItem = (item) => {
